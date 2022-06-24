@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:title="@string/pengaturan">
+            <menu>
+                <item
+                    android:id="@+id/pengaturan_umum"
+                    android:title="@string/pengaturan_umum"
+                    android:icon="@drawable/pengaturan_umum"/>
+
+                <item
+                    android:id="@+id/pengaturan_privasi"
+                    android:title="@string/pengaturan_privasi"
+                    android:icon="@drawable/pengaturan_privasi"/>
+
+                <item
+                    android:id="@+id/pengaturan_wifi"
+                    android:title="@string/pengaturan_wi_fi"
+                    android:icon="@drawable/pengaturan_wifi"/>
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="@string/lanjutan">
+            <menu>
+                <item
+                    android:id="@+id/segarkan"
+                    android:title="@string/segarkan"
+                    android:icon="@drawable/segarkan"/>
+
+                <item
+                    android:id="@+id/mulai_ulang"
+                    android:title="@string/mulai_ulang"
+                    android:icon="@drawable/mulai_ulang"/>
+
+                <item
+                    android:id="@+id/matikan"
+                    android:title="@string/matikan"
+                    android:icon="@drawable/matikan"/>
+
+                <item
+                    android:id="@+id/keluar"
+                    android:title="@string/keluar"
+                    android:icon="@drawable/keluar"/>
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@drawable/background"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigasi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/background"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:itemIconSize="20dp"
+        app:itemTextAppearance="@style/Navigation"
+        app:menu="@menu/menu"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.szugyi.circlemenu.view.CircleLayout
+            android:id="@+id/CircleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:firstChildPosition="East">
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CicleHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_home"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CircleMenujuAdzan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_menuju_adzan"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CicleBedug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_bedug"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CicleAdzan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_adzan"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CircleDoaAdzan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_doa_adzan"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CicleMenujuIqomah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_menuju_iqomah"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CircleIqomah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_iqomah"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+            <com.szugyi.circlemenu.view.CircleImageView
+                android:id="@+id/CircleWaktuSalat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/menu_waktu_salat"
+                android:padding="15dp"
+                android:elevation="2dp"/>
+
+        </com.szugyi.circlemenu.view.CircleLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <include
+                android:id="@+id/Home"
+                layout="@layout/menu_home"/>
+
+            <include
+                android:id="@+id/MenujuAdzan"
+                android:visibility="gone"
+                layout="@layout/menu_menuju_adzan"/>
+
+            <include
+                android:id="@+id/Bedug"
+                android:visibility="gone"
+                layout="@layout/menu_bedug"/>
+
+            <include
+                android:id="@+id/Adzan"
+                android:visibility="gone"
+                layout="@layout/menu_adzan"/>
+
+            <include
+                android:id="@+id/DoaAdzan"
+                android:visibility="gone"
+                layout="@layout/menu_doa_adzan"/>
+
+            <include
+                android:id="@+id/MenujuIqomah"
+                android:visibility="gone"
+                layout="@layout/menu_menuju_iqomah"/>
+
+            <include
+                android:id="@+id/Iqomah"
+                android:visibility="gone"
+                layout="@layout/menu_iqomah"/>
+
+            <include
+                android:id="@+id/WaktuSalat"
+                android:visibility="gone"
+                layout="@layout/menu_waktu_salat"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimer">#232D36</color>
+    <color name="colorPrimary">#006600</color>
+    <color name="colorPrimaryDark">#232D47</color>
+    <color name="colorAccent">#0F1E25</color>
+    <color name="red">#FF0000</color>
+    <color name="button">#FFFF00</color>
+    <color name="dialog">#F2F2F2</color>
+    <color name="hint">#FFF59C</color>
+    <color name="background">#101D25</color>
+    <color name="textColor">#9EA3A7</color>
+    <color name="invisible">#F2F2F2</color>
+    <color name="rounded">#809EA3A7</color>
+    <color name="Sampel1">#FF0000</color>
+    <color name="Sampel2">#FFFF00</color>
+    <color name="Sampel3">#00FF00</color>
+    <color name="Sampel4">#800000</color>
+    <color name="Sampel5">#000000</color>
+    <color name="Sampel6">#9ACD32</color>
+    <color name="Sampel7">#C71585</color>
+    <color name="Sampel8">#48D1CC</color>
+    <color name="Sampel9">#C0C0C0</color>
+    <color name="Sampel10">#A0522D</color>
+</resources>

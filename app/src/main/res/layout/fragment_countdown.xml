@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Pengaturan.MenuMenujuIqomah.MenujuIqomahCountdownFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:text="@string/countdown_salat_subuh"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        tools:ignore="RelativeOverlap">
+
+                        <EditText
+                            android:id="@+id/txtCountdownMenitMenujuIqomahSubuh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/menit"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/titik_dua"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtCountdownDetikMenujuIqomahSubuh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/detik"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:text="@string/countdown_salat_dzuhur"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        tools:ignore="RelativeOverlap">
+
+                        <EditText
+                            android:id="@+id/txtCountdownMenitMenujuIqomahDzuhur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/menit"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/titik_dua"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtCountdownDetikMenujuIqomahDzuhur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/detik"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:text="@string/countdown_salat_ashar"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        tools:ignore="RelativeOverlap">
+
+                        <EditText
+                            android:id="@+id/txtCountdownMenitMenujuIqomahAshar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/menit"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/titik_dua"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtCountdownDetikMenujuIqomahAshar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/detik"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:text="@string/countdown_salat_maghrib"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        tools:ignore="RelativeOverlap">
+
+                        <EditText
+                            android:id="@+id/txtCountdownMenitMenujuIqomahMaghrib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/menit"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/titik_dua"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtCountdownDetikMenujuIqomahMaghrib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/detik"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:text="@string/countdown_salat_isya"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        tools:ignore="RelativeOverlap">
+
+                        <EditText
+                            android:id="@+id/txtCountdownMenitMenujuIqomahIsya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/menit"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/titik_dua"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtCountdownDetikMenujuIqomahIsya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/detik"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnSimpanMenuCountdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:background="@color/button"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:text="@string/SIMPAN"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

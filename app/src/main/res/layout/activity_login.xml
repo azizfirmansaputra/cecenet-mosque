@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/rounded"
+        android:layout_margin="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cecenet"
+            android:contentDescription="@string/app_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="25dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:hint="@string/password"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:singleLine="true"
+                android:focusable="true"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHighlight="@color/colorPrimary"
+                android:imeOptions="actionDone"
+                android:drawableStart="@drawable/password"
+                android:drawableTint="@color/colorPrimary"
+                app:met_underlineColor="@color/colorPrimary"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelTextColor="@color/colorPrimary"
+                app:met_floatingLabelTextSize="20sp"
+                app:met_floatingLabel="highlight"/>
+
+        </LinearLayout>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/login"
+                android:background="@color/button"
+                android:textSize="25sp"
+                android:onClick="btnPassword"/>
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+</ScrollView>

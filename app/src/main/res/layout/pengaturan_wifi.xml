@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/dialog"
+        app:cardCornerRadius="17dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PENGATURAN_Wi_Fi"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/background"
+                android:background="@color/colorPrimary"
+                android:padding="7dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/dialog">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otomatis_dicadangkan_pada_penyimpanan_telepon"
+                    android:textColor="@color/red"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="5dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtSSID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nama_wi_fi_ssid"
+                    android:textSize="15sp"
+                    android:textColor="@color/textColor"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelTextColor="@color/colorPrimary"
+                    app:met_floatingLabelTextSize="15sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_underlineColor="@color/colorPrimary"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:hintEnabled="false"
+                    app:passwordToggleTint="@color/colorPrimary">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtPasswordWifi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password_wi_fi"
+                        android:textSize="15sp"
+                        android:textColor="@color/textColor"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHighlight="@color/colorPrimary"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_floatingLabelTextColor="@color/colorPrimary"
+                        app:met_floatingLabelTextSize="15sp"
+                        app:met_floatingLabel="highlight"
+                        app:met_underlineColor="@color/colorPrimary"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/hint"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jika_ingin_mengetahui_perubahan_setelah_disimpan_silahkan_muat_ulang_atau_restart_raspberry_pi"
+                        android:textColor="@color/textColor"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="5dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/LLBatalPengaturanWifi"
+                        android:gravity="end">
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btnSimpanPengaturanWifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/SIMPAN"
+                                android:textSize="15sp"
+                                android:textColor="@color/background"
+                                android:textStyle="bold"
+                                android:drawableStart="@android:drawable/ic_menu_save"
+                                android:background="@drawable/rounded_button"
+                                android:padding="10dp"
+                                android:drawableTint="@color/background"/>
+
+                        </com.andexert.library.RippleView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLBatalPengaturanWifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true">
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btnBatalPengaturanWifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/batal"
+                                android:textSize="15sp"
+                                android:textColor="@color/background"
+                                android:textStyle="bold"
+                                android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+                                android:background="@drawable/rounded_button"
+                                android:padding="10dp"
+                                android:drawableTint="@color/background"/>
+
+                        </com.andexert.library.RippleView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

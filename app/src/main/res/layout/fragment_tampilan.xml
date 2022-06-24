@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Pengaturan.MenuMenujuAdzan.MenujuAdzanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgBackgroundMenu"
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/BACKGROUND"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btnGantiBackgroundMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:background="@color/button"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:text="@string/ganti_background"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtJudulAnimasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="@string/animasi"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerAnimasiBackgroundMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:spinnerMode="dropdown"
+                        android:popupBackground="@color/background"
+                        android:backgroundTint="@color/textColor"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/warna"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtJudulWarna1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/lingkaran"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"/>
+
+                            <Button
+                                android:id="@+id/btnWarna1Menu"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtJudulWarna2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/Countdown"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"/>
+
+                            <Button
+                                android:id="@+id/btnWarna2Menu"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtJudulWarna3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/text"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"/>
+
+                            <Button
+                                android:id="@+id/btnWarna3Menu"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtJudulDurasi_Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="@string/tampil_pada_menit_ke"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"/>
+
+                        <EditText
+                            android:id="@+id/txtDurasiTampilMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:hint="@string/menit"
+                            android:textSize="15sp"
+                            android:textColor="@color/textColor"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:imeOptions="actionDone"
+                            android:importantForAutofill="no"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textColorHighlight="@color/colorPrimary"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerAnimasiBackgroundMenu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:spinnerMode="dropdown"
+                            android:popupBackground="@color/background"
+                            android:backgroundTint="@color/textColor"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtJudulSuara_Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="@string/bunyi_saat_10_detik"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"/>
+
+                        <CheckBox
+                            android:id="@+id/cbSuaraMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="@string/ya"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            android:buttonTint="@color/colorPrimary"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerAnimasiBackgroundMenu3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:spinnerMode="dropdown"
+                            android:popupBackground="@color/background"
+                            android:backgroundTint="@color/textColor"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSimpanMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:background="@color/button"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:text="@string/SIMPAN"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

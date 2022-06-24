@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Pengaturan.MenuHome.PengumumanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RadioGroup
+                android:id="@+id/rgPengumuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPengumumanAktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/AKTIF"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp"/>
+
+                <RadioButton
+                    android:id="@+id/rbPengumumanTidakAktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/tidak_aktif"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp"/>
+
+            </RadioGroup>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/LLSettingPengumuman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/rgPengumumanMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbPengumumanModeInsert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/insert_home"
+                            android:buttonTint="@color/colorPrimary"
+                            android:textColor="@color/textColor"
+                            android:textSize="17sp"/>
+
+                        <RadioButton
+                            android:id="@+id/rbPengumumanModeFull"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/full_screen"
+                            android:buttonTint="@color/colorPrimary"
+                            android:textColor="@color/textColor"
+                            android:textSize="17sp"/>
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbPengumumanDelay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/delay"
+                            android:textColor="@color/textColor"
+                            android:textSize="15sp"
+                            android:buttonTint="@color/colorPrimary"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/durasi_"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"/>
+
+                            <EditText
+                                android:id="@+id/txtDurasiMenitPengumuman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:hint="@string/menit"
+                                android:textSize="15sp"
+                                android:textColor="@color/textColor"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:imeOptions="actionNext"
+                                android:importantForAutofill="no"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textColorHighlight="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/titik_dua"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/txtDurasiDetikPengumuman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:hint="@string/detik"
+                                android:textSize="15sp"
+                                android:textColor="@color/textColor"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:imeOptions="actionNext"
+                                android:importantForAutofill="no"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textColorHighlight="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/interval"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"/>
+
+                            <EditText
+                                android:id="@+id/txtIntervalMenitPengumuman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:hint="@string/menit"
+                                android:textSize="15sp"
+                                android:textColor="@color/textColor"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:imeOptions="actionNext"
+                                android:importantForAutofill="no"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textColorHighlight="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/titik_dua"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/txtIntervalDetikPengumuman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:hint="@string/detik"
+                                android:textSize="15sp"
+                                android:textColor="@color/textColor"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:imeOptions="actionDone"
+                                android:importantForAutofill="no"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textColorHighlight="@color/colorPrimary"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVSettingPengumumanInsert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:baselineAligned="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        tools:ignore="TooDeepLayout">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:text="@string/posisi"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Spinner
+                                            android:id="@+id/spinnerPosisiPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:spinnerMode="dropdown"
+                                            android:popupBackground="@color/background"
+                                            android:backgroundTint="@color/textColor"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="end"
+                                            android:text="@string/background_"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Button
+                                            android:id="@+id/btnBackgroundPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="@color/colorPrimary"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:baselineAligned="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="start"
+                                            android:text="@string/warna_judul"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Button
+                                            android:id="@+id/btnWarnaJudulPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="@color/colorPrimary"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="end"
+                                            android:text="@string/warna_isi"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Button
+                                            android:id="@+id/btnWarnaIsiPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="@color/colorPrimary"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVSettingPengumumanFull"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:baselineAligned="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:text="@string/urutan"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Spinner
+                                            android:id="@+id/spinnerUrutanPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:spinnerMode="dropdown"
+                                            android:popupBackground="@color/background"
+                                            android:backgroundTint="@color/textColor"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:text="@string/animasi"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Spinner
+                                            android:id="@+id/spinnerAnimasiPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:spinnerMode="dropdown"
+                                            android:popupBackground="@color/background"
+                                            android:backgroundTint="@color/textColor"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:baselineAligned="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="start"
+                                            android:text="@string/warna_header"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Button
+                                            android:id="@+id/btnWarnaHeaderPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="@color/colorPrimary"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="end"
+                                            android:text="@string/background_"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp"/>
+
+                                        <Button
+                                            android:id="@+id/btnBGGambarPengumuman"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:background="@color/button"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:textSize="17sp"
+                                            android:text="@string/ganti"
+                                            android:textAllCaps="false"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSimpanSettingPengumuman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:background="@color/button"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="@string/SIMPAN"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/btnVisibleSettingPengumuman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/hide"
+                android:backgroundTint="@color/textColor"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/SRLPengumuman"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/LVPengumuman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:transcriptMode="alwaysScroll"/>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnTambahPengumuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/add"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Pengaturan.MenuHome.IdentitasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtNamaMasjid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nama_masjid"
+                    android:textSize="15sp"
+                    android:textColor="@color/textColor"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelTextColor="@color/colorPrimary"
+                    app:met_floatingLabelTextSize="15sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_underlineColor="@color/colorPrimary"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtAlamatMasjid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/alamat_masjid"
+                    android:textSize="15sp"
+                    android:textColor="@color/textColor"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelTextColor="@color/colorPrimary"
+                    app:met_floatingLabelTextSize="15sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_underlineColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/hint"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jika_ingin_mengetahui_perubahan_setelah_disimpan_silahkan_pilih_menu_segarkan_atau_refresh"
+                android:textColor="@color/textColor"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnSimpanIdentitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/button"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="@string/SIMPAN"/>
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_arsip"
+        android:title="@string/ARSIP"
+        android:icon="@drawable/arsip"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_aktif"
+        android:title="@string/AKTIF"
+        android:icon="@drawable/unarsip"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_hapus"
+        android:title="@string/hapus"
+        android:icon="@drawable/hapus"
+        app:showAsAction="always"/>
+
+</menu>

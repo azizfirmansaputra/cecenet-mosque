@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimer</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/official_book</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="spinnerStyle">@style/Spinner</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimer</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Navigation" parent="android:Widget.TextView">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Tab" parent="android:Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/official_book</item>
+    </style>
+
+    <style name="Activated" parent="AppTheme">
+        <item name="android:background">?android:attr/activatedBackgroundIndicator</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/official_book</item>
+        <item name="background">@color/background</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+</resources>

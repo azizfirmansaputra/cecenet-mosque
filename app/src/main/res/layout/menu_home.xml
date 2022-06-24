@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CircleMenuHome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@drawable/border">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_home"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:textColor="@color/background"
+        android:padding="7dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="1dp">
+
+        <Button
+            android:id="@+id/btnMenuTemplateHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:text="@string/template"
+            android:background="@color/background"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:onClick="btnMenuTemplateHome"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnMenuIdentitasHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:text="@string/identitas"
+            android:background="@color/background"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:onClick="btnMenuIdentitasHome"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnMenuBackgroundHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:text="@string/background"
+            android:background="@color/background"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:onClick="btnMenuBackgroundHome"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btnMenuInformasiHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:text="@string/informasi"
+            android:background="@color/background"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:onClick="btnMenuInformasiHome"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnMenuKotaHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:text="@string/kota_daerah"
+            android:background="@color/background"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:onClick="btnMenuKotaHome"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnMenuPengumumanHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:text="@string/pengumuman"
+            android:background="@color/background"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:onClick="btnMenuPengumumanHome"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>
